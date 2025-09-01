@@ -17,11 +17,14 @@ This project is part of the **Flutter Development – F1 Assessment**.
 
 ---
 
-## 📐 System Architecture  
+⚙️ Installation & Setup
+# Clone the repository
+git clone https://github.com/your-username/agriinsight.git
+cd agriinsight
 
-```mermaid
-flowchart TD
-    User[👨‍🌾 User] -->|Interacts with| App[📱 AgriInsight Flutter App]
-    App -->|Fetches Weather Data (Default Location)| API[(🌦 OpenWeather API)]
-    App -->|State Management| Provider[(🗂 CropProvider)]
-    App --> UI[🎨 Dashboard UI]
+# Install dependencies
+flutter pub get
+
+# Run the application
+flutter run
+
