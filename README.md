@@ -1,16 +1,27 @@
-# agritech_app
+# 🌱 AgriInsight – Next-Gen Agritech App  
 
-A new Flutter project.
+AgriInsight is a **Flutter-based frontend solution** designed for the agriculture sector.  
+It empowers farmers and stakeholders with **weather insights, crop monitoring, and farm management tools**, presented through a clean and intuitive UI.  
 
-## Getting Started
+This project is part of the **Flutter Development – F1 Assessment**.  
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Features  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 📊 **Dashboard UI** – Centralized place to monitor weather and crop data  
+- 🌦 **Weather Insights** – Fetches live temperature data from API (no city input needed)  
+- 🌱 **Crop Monitoring** – Displays crop-related insights with state management (Provider)  
+- 📱 **Responsive UI** – Works smoothly on mobile and tablet  
+- 🎨 **Modern UI/UX** – Clean design, rounded cards, and smooth layouts  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📐 System Architecture  
+
+```mermaid
+flowchart TD
+    User[👨‍🌾 User] -->|Interacts with| App[📱 AgriInsight Flutter App]
+    App -->|Fetches Weather Data (Default Location)| API[(🌦 OpenWeather API)]
+    App -->|State Management| Provider[(🗂 CropProvider)]
+    App --> UI[🎨 Dashboard UI]
